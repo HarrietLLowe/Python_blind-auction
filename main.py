@@ -23,7 +23,7 @@ else:
 def highest_bidder(bid_log):
   highest_bid = 0
   for bidder in bid_log:
-    bid_amount = bid_log[bidder]
+    bid_amount = bid_log[bidder] #this is used to get hold of the values rather than the keys. If this line was just bid_log, then it would identify the keys (the names) rather than the values.
     if bid_amount > highest_bid:
       highest_bid = bid_amount
       winner = bidder
